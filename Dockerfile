@@ -1,6 +1,6 @@
 FROM golang:1.10.3-alpine
 
-RUN apk add --update curl make openssh-client git mercurial mysql-client \
+RUN apk add --update curl bash make openssh-client git mercurial mysql-client \
     && rm -rf /var/cache/apk/*
 
 RUN ln -s /usr/include/locale.h /usr/include/xlocale.h
